@@ -134,7 +134,7 @@ def main():
     make_heatmap_binned_vs_categorical(
         df, 'x_val', 'a_val',
         title='x_val bins vs a_val groups (all records)',
-        cmap='viridis',
+        cmap='Reds',
         output_path=os.path.join(OUTPUT_DIR, 'case_0_heatmap_x_vs_a_all.png')
     )
 
@@ -151,7 +151,7 @@ def main():
     make_heatmap_binned_vs_binned(
         df, 'x_val', 'y_val',
         title='x_val bins (16) vs y_val bins (16) (all records)',
-        cmap='viridis',
+        cmap='Reds',
         output_path=os.path.join(OUTPUT_DIR, 'case_0_heatmap_x_vs_y_all.png')
     )
 
@@ -167,7 +167,7 @@ def main():
     make_heatmap_binned_vs_binned(
         df, 'y_val', 'z_val',
         title='y_val bins (16) vs z_val bins (16) (all records)',
-        cmap='viridis',
+        cmap='Reds',
         output_path=os.path.join(OUTPUT_DIR, 'case_0_heatmap_y_vs_z_all.png')
     )
 
