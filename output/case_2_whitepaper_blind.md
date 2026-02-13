@@ -1,4 +1,4 @@
-# Case 2: Inter-Event Interval Analysis (Blind Study - Approach Two)
+# Case 2A: Inter-Event Interval Analysis (Blind Study - Approach Two)
 
 **Document Information**
 - Version: 1.0
