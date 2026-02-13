@@ -28,9 +28,9 @@ This is a statistical analysis of anonymized data. This data is located in two f
 
 **Case 3B:** Stratified Population
 - Same tests stratified by v_val
-- Tests if clustering pattern is dependent on energy-proxy value
+- Tests if clustering pattern persists across subpopulations
 
-### Case 4: Energy-Weighted Validation
+### Case 4: Weighted Validation Using Proxy Value
 **Case 4A:** Full Population (Energy-weighted)
 - Replicate Case 3A but weight by v_val (energy proxy)
 
