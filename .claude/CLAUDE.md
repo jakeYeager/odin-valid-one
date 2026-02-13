@@ -11,8 +11,9 @@ This is a statistical analysis of anonymized data. This data is located in two f
 
 ## Analysis Framework
 Cases 0-4 test for patterns in the data:
-- Case 0: Population description
-- Case 1-4: Statistical significance testing
+- Case 0: Population description for x_val, y_val and z_val
+- Case 1: Statistical uniform or non-uniform distribution testing for x_val, y_val and z_val
+- Case 2-4: Statistical significance testing
 
 
 ## Standards & Conventions
