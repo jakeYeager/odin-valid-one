@@ -69,6 +69,10 @@ odin-valid-one/
 
 Unless otherwise specified in the requirements, every whitepaper report output should include:
 
+**Output Images:**
+
+Should be embedded inline (once) within their referencing section.
+
 **Header:**
 ```markdown
 # Case X: [Objective Description Based on Data Findings]
@@ -89,12 +93,14 @@ Unless otherwise specified in the requirements, every whitepaper report output s
 - Version: 1.0
 - Date: [current date]
 - Planning prepared with: Claude.ai Web Interface (Haiku 4.5)
-- Generated with: Claude Code 2.1.39 (Claude Model Opus 4.6)
+- Generated with: Claude Code 2.1.41 (Claude Model Opus 4.6)
 - Project: Approach Two Blind Study - ISOLATED ANALYSIS
 - Isolation Status: Complete separation from main project
 ```
 
 ### Statistical Standards
+
+Unless otherwise specified in plan requirements, fallback on these standards:
 
 - **Significance threshold:** p < 0.05
 - **Effect size metric:** Cramér's V (dimensionless, 0-1 scale)
@@ -168,7 +174,7 @@ After completing Case 0 and subsequent cases:
 - Report confidence intervals
 - Quantify uncertainty
 
-### Do Maintain Firewall
+### Do Maintain Value's Attribution Firewall
 
 - Keep this directory isolated
 - Don't cross-reference main project
