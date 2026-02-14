@@ -59,3 +59,13 @@ This report replicates Case 3A using energy-weighted bin sums instead of event c
 ### [Case 4B: Energy-Weighted Clustering (Stratified by v_val Quartiles)](output/case_4b_whitepaper_blind.md)
 
 The final analytical report combines energy-weighting with v_val stratification, completing the 2x2 matrix of count/energy versus full/stratified analysis. All twelve variable-stratum combinations produce p = 0.0 with 100th percentile synthetic rankings, confirming that energy-weighting lacks discriminative power across all subpopulations. The report documents the extreme energy concentration in Q4 (97.5% of total energy from 23.9% of events) and shows that only 4 of 12 stratum-variable pairs agree between count-based (Case 3B) and energy-weighted (Case 4B) results. This demonstrates that the v_val-dependent structure discovered in Case 3B is obliterated by energy-weighting, reinforcing the conclusion that the discovered patterns are frequency-based phenomena best studied through event counting rather than energy aggregation.
+
+---
+
+## Author's Note
+
+Data scrubbing and “value property context” hygiene was a constant task during the whole process. Claude almost made some unforced errors. You really do have to double-check all the responses. Also, these screenshots are not to belittle this fantastic tool, but I would like to use them to illustrate the extent to which I tried to keep this analysis as truly blind and value agnostic as possible!
+
+![Oopsies 1](./assets/oops1.png)
+![Oopsies 2](./assets/oops2.png)
+![Oopsies 3](./assets/oops3.png)
