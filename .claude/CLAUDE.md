@@ -9,11 +9,33 @@ This is a statistical analysis of anonymized data. This data is located in two f
 - No context provided about what variables represent
 - Purpose: Analyze statistical relationships and distributions
 
-## Analysis Framework
-Cases 0-4 test for patterns in the data:
-- Case 0: Population description for x_val, y_val and z_val
-- Case 1: Statistical uniform or non-uniform distribution testing for x_val, y_val and z_val
-- Case 2-4: Statistical significance testing
+## Analysis Framework: Cases 1, 2A/2B, 3A/3B, 4A/4B
+
+### Case 1: Population Description & Uniformity
+- Tests which variables show non-uniform distributions
+
+### Case 2: Inter-Event Interval Analysis
+**Case 2A:** Complete Population
+- All intervals, temporal clustering detection
+
+**Case 2B:** Stratified Population  
+- Intervals stratified by v_val groupings
+- Tests if clustering persists across subpopulations
+
+### Case 3: Clustering Patterns
+**Case 3A:** Full Population
+- All records tested for x_val, y_val, z_val clustering
+
+**Case 3B:** Stratified Population
+- Same tests stratified by v_val
+- Tests if clustering pattern persists across subpopulations
+
+### Case 4: Weighted Validation Using Proxy Value
+**Case 4A:** Full Population (Energy-weighted)
+- Replicate Case 3A but weight by v_val (energy proxy)
+
+**Case 4B:** Stratified Population (Energy-weighted)
+- Replicate Case 3B but energy-weighted
 
 
 ## Standards & Conventions
@@ -45,7 +67,11 @@ odin-valid-one/
 
 ### Metadata Standards
 
-Every whitepaper output should include:
+Unless otherwise specified in the requirements, every whitepaper report output should include:
+
+**Output Images:**
+
+Should be embedded inline (once) within their referencing section.
 
 **Header:**
 ```markdown
@@ -67,12 +93,14 @@ Every whitepaper output should include:
 - Version: 1.0
 - Date: [current date]
 - Planning prepared with: Claude.ai Web Interface (Haiku 4.5)
-- Generated with: Claude Code 2.1.31 (Claude Model Opus 4.5)
+- Generated with: Claude Code 2.1.41 (Claude Model Opus 4.6)
 - Project: Approach Two Blind Study - ISOLATED ANALYSIS
 - Isolation Status: Complete separation from main project
 ```
 
 ### Statistical Standards
+
+Unless otherwise specified in plan requirements, fallback on these standards:
 
 - **Significance threshold:** p < 0.05
 - **Effect size metric:** Cramér's V (dimensionless, 0-1 scale)
@@ -146,7 +174,7 @@ After completing Case 0 and subsequent cases:
 - Report confidence intervals
 - Quantify uncertainty
 
-### Do Maintain Firewall
+### Do Maintain Value's Attribution Firewall
 
 - Keep this directory isolated
 - Don't cross-reference main project

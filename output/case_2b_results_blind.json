@@ -1,0 +1,65 @@
+{
+  "data_processing": {
+    "total_records_loaded": 10105,
+    "v_val_filter_applied": "6.0 <= v_val <= 6.9",
+    "records_after_filter": 9136,
+    "valid_intervals_calculated": 9134,
+    "date_range_start": "1949-12-25",
+    "date_range_end": "2021-12-20",
+    "timestamp_parsing_status": "success"
+  },
+  "interval_statistics": {
+    "sample_size": 9134,
+    "min_days": 1.2e-05,
+    "max_days": 39.136308,
+    "mean_days": 2.878571,
+    "median_days": 1.753767,
+    "std_dev": 3.367795,
+    "q1_days": 0.57217,
+    "q3_days": 4.042106,
+    "iqr_days": 3.469936
+  },
+  "uniformity_test": {
+    "chi_square": {
+      "statistic": 18397.8835,
+      "p_value": 0.0,
+      "degrees_of_freedom": 15,
+      "interpretation": "significant"
+    },
+    "cramers_v": 0.366444,
+    "bin_counts": [
+      2,
+      7,
+      4,
+      13,
+      34,
+      50,
+      73,
+      125,
+      195,
+      418,
+      756,
+      1424,
+      2213,
+      2583,
+      1141,
+      96
+    ]
+  },
+  "exponential_baseline_test": {
+    "ks_statistic": 0.072777,
+    "ks_p_value": 1.6239282418446175e-42,
+    "lambda_parameter": 0.347395,
+    "interpretation": "deviates from random"
+  },
+  "clustering_analysis": {
+    "coefficient_of_variation": 1.169954,
+    "cv_interpretation": "random",
+    "max_min_ratio": 3381377.0,
+    "clustering_indicators": {
+      "intervals_less_than_median": 4567,
+      "intervals_greater_than_3x_mean": 579,
+      "proportion_short_intervals": 0.5
+    }
+  }
+}
